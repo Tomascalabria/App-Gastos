@@ -35,6 +35,11 @@ i.fa-solid,.fa-bars{
      display: flex;
     
     }
+    .fa-bars:hover{
+        color:rgb(3 242 171) ;  
+         cursor:pointer
+    
+    }
 
 .navBarToggleSlide{
     height: 100%; 
@@ -47,7 +52,7 @@ i.fa-solid,.fa-bars{
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: rgb(8, 153, 109);
+    background-color: rgb(64, 8, 153);
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
@@ -80,7 +85,11 @@ i.fa-solid,.fa-bars{
     top: 8%;
     right: 10%; 
     position: absolute; 
-
+     }
+     .fa-x:hover{
+         color:rgb(3 242 171) ;  
+         cursor:pointer
+    
      }
 .navbarList{
     height: 60%;
@@ -90,6 +99,8 @@ i.fa-solid,.fa-bars{
 }
 .listItem {
     font-family: 'Barlow, Roboto, sans-serif';
+    font-style: normal;
+    font-weight: 600;
     list-style: none;
     font-size: 2rem;
     margin-top: 1.9rem;
@@ -99,6 +110,11 @@ i.fa-solid,.fa-bars{
     text-decoration: none;  
     color: #fff;
 }
+.listItem a:hover {
+    text-decoration: underline 4px rgb(3 242 171) ;  
+    
+    color: #fff;
+}
 @media (max-width:990px) {
     .navBarTitle-brand{
         justify-content: center;
@@ -106,12 +122,12 @@ i.fa-solid,.fa-bars{
 }
 .loginButton{
     border-radius: 40px;
-    align-items: center;
+    text-align: center;
     margin-left: 44px;
     width: 230px;
-    background-color:#fff;
-    border: solid 2px #6439FF;
-    color: #6439FF;
+    background-color:#6439FF;
+    border: solid 2px #fff;
+    color: #ffff;
     font-weight: bolder;
 }
 @media (max-width:280px) {
@@ -139,7 +155,7 @@ i.fa-solid,.fa-bars{
     color: aliceblue;
 }  
 title{
-    font-family: Barlow, Roboto, sans-serif;
+    font-family: 'Barlow, Roboto, sans-serif';
     font-style: normal;
     line-height: 48px;
     font-weight: normal;
