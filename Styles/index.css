@@ -5,6 +5,12 @@
   
 }
 /* ----- Header ----*/ 
+.navbar{
+    background-color: #ffff;
+    border: solid 0.4px #ffff;
+    color: #6439FF ;
+    font-weight: bold;
+}
 .loginButton{
     border-radius: 45px;
     width: 230px;
