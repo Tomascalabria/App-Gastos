@@ -5,24 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-const gastos = [];
-
 const agregarGasto = (e) => {
   e.preventDefault();
   const nombre = document.getElementById("inputNombre").value;
-  const monto = parseFloat(document.getElementById("inputMonto").value);
+  const gasto = document.getElementById("inputGasto").value;
 
-  if (nombre && monto) {
-    if (gastos.some((gasto) => gasto.nombre == nombre)) {
-      gastos.forEach((gasto) => {
-        if (gasto.nombre == nombre) {
-          gasto.monto += monto;
-        }
-      });
-    } else {
-      gastos.push({ nombre, monto });
-    }
-
-    console.log(gastos);
-  }
+  console.log(nombre);
+  console.log(gasto);
 };
