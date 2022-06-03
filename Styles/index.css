@@ -2,20 +2,121 @@
     margin: 0%;
     padding: 0;
     width: 100%;
-  
+    scroll-behavior: smooth;
 }
 /* ----- Header ----*/ 
+.navbarContainer{
+    width: 100%;
+}
 .navbar{
+    width: 100%;
     background-color: #ffff;
     border: solid 0.4px #ffff;
-    color: #6439FF ;
+    display: flex;
+    color: #6439FF;
     font-weight: bold;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
 }
-.loginButton{
-    border-radius: 45px;
-    width: 230px;
+i.fa-solid,.fa-bars{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: xx-large;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+    .navBarTitle{
+     color:  #6439FF;
+     margin-left: 1.8rem;
+     display: flex;
+    }
+
+.navBarToggleSlide{
+    height: 100%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(95, 6, 240); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.navBarToggleContainer{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+}
+.navBarToggleContainerOff{
+    visibility: visible;
+    display: flex;
+    height: 100%;
+}
+.fa-x{
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    font-size: xx-large;
+    width: 100%; 
+    color: white;
+    align-items: flex-start;
+    justify-content: flex-end;
+    top: 8%;
+    right: 10%; 
+    position: absolute;
+     }
+.navbarList{
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.listItem {
+    font-family: 'Barlow, Roboto, sans-serif';
+    list-style: none;
+    font-size: 2rem;
+    margin-top: 1.9rem;
+   
+}
+.listItem a {
+    text-decoration: none;  
+    color: #fff;
+}
+@media (max-width:990px) {
+    .navBarTitle-brand{
+        justify-content: center;
+    }
+}
+.loginButton{
+    border-radius: 40px;
+    align-items: center;
+    margin-left: 44px;
+    width: 230px;
+    background-color:#fff;
+    border: solid 2px #6439FF;
+    color: #6439FF;
+    font-weight: bolder;
+}
+@media (max-width:280px) {
+    .loginButton{ 
+        width: 190px;
+        margin:0;
+    }
+}
 /*----body-----*/
 .mainContainer{
     width: 100%;
@@ -40,7 +141,7 @@ title{
     line-height: 48px;
     font-weight: normal;
     font-size: 40px;
-
+    text-decoration: none;
 }
 .titleStrong{
     padding-bottom: 2px;
