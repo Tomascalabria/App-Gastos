@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css ">
+    <link rel="stylesheet" href="./Styles/App.css">
+    <title>App de Gastos</title>
+</head>
+
+<body>
+  <header>
+      <div class="navBarContainer">
+        <nav class="navbar">
+          <h2 class="navbarTitle">RegistrAPP </h2>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+      
+        <nav class="navBarToggle">
+          <div class="navBarToggleContainer  ">  
+            <i class="fa-solid fa-x fa-x"></i>
+            <ul class="navbarList">
+              <li class="listItem"><a href="#"> Ingresar Gasto</a></li>
+              <li class="listItem"><a href="./App.html"> Mis Gastos</a></li>
+            </ul>
+            <button class="loginButton">Log Out</button>
+          </div>
+        </nav>
+      
+      </div>
+  </header> 
+  <main>
+
+  <input id="inputNombre" type="text" placeholder="Nombre">
+  <input id="inputMonto" type="number" placeholder="Monto">
+
+  <button onclick="agregarGasto()">Registrar gasto</button>
+  <br>
+  <div>Detalle de gastos:</div>
+  <ul class="list-group" id = "detalle">No hay gastos registrados</ul>
+  <br>
+  <div id="totalGrupo"></div>
+  <br>
+  <div id="totalPersona"></div>
+  <br>
+  <div>Saldos:</div>
+  <ul class="list-group" id = "deudores"></ul>
+  <ul class="list-group" id = "acreedores"></ul>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/efac65b7b0.js" crossorigin="anonymous"></script>
+  <script src="./Scripts/App.js"></script>    
+  <script src="./Scripts/Styles.js"></script>    
+
+</body>
+</html>
