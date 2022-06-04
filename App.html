@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./Styles/App.css">
     <title>App de Gastos</title>
 </head>
+
 <body>
-    <header>
-        <div class="navBarContainer">
+  <header>
+      <div class="navBarContainer">
         <nav class="navbar">
           <h2 class="navbarTitle">RegistrAPP </h2>
           <i class="fa-solid fa-bars"></i>
@@ -28,17 +29,29 @@
         </nav>
       
       </div>
-      </header> 
-      <main>
-        <form action="">
-          <input id="inputNombre" type="text" />
-          <input id="inputMonto" type="number" />
-          <input type="submit" title="Enviar" name="Enviar" id="enviar" />
-        </form>
-      </main>   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/efac65b7b0.js" crossorigin="anonymous"></script>
-<script src="./Scripts/App.js"></script>    
-<script src="./Scripts/Styles.js"></script>    
+  </header> 
+  <main>
+
+  <input id="inputNombre" type="text" placeholder="Nombre">
+  <input id="inputMonto" type="number" placeholder="Monto">
+
+  <button onclick="agregarGasto()">Registrar gasto</button>
+  <br>
+  <div>Detalle de gastos:</div>
+  <ul class="list-group" id = "detalle">No hay gastos registrados</ul>
+  <br>
+  <div id="totalGrupo"></div>
+  <br>
+  <div id="totalPersona"></div>
+  <br>
+  <div>Saldos:</div>
+  <ul class="list-group" id = "deudores"></ul>
+  <ul class="list-group" id = "acreedores"></ul>    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/efac65b7b0.js" crossorigin="anonymous"></script>
+  <script src="./Scripts/App.js"></script>    
+  <script src="./Scripts/Styles.js"></script>    
+
 </body>
 </html>
