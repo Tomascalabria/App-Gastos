@@ -138,3 +138,10 @@ i.fa-solid,.fa-bars{
         margin:0;
     }
 }
+
+main.app{
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
