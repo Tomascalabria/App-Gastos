@@ -1,8 +1,10 @@
 let montos = []
 let saldos = {}
-const eliminarDiacriticos=(texto)=> {
-  return texto.normalize('NFD').replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const eliminarCaracteresEspeciales=(texto)=> {
+ return texto.normalize('NFD').replace(/[\u0300-\u036f]/g,"").toUpperCase()
+ 
 }
+
 
 let detalle = document.getElementById("detalle");
 let totalGrupo = document.getElementById("totalGrupo");
@@ -26,7 +28,7 @@ function agregarGasto(){
 
   if (nombre && monto) {
 
-    nombre = eliminarDiacriticos(nombre)
+    nombre = eliminarCaracteresEspeciales(nombre)
 
       if (gastos.some((gasto) => gasto.nombre == nombre)) {
         gastos.forEach((gasto) => {

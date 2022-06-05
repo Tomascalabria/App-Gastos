@@ -145,3 +145,19 @@ main.app{
     width: 80%;
     margin: 0 auto;
 }
+#totalGrupo {
+    font-weight: bolder;
+}
+.saldosContainer {
+    font-weight: bolder;
+
+}
+
+#totalPersona{
+    font-weight: bolder;
+
+}
+
+.list-group{
+    
+}
